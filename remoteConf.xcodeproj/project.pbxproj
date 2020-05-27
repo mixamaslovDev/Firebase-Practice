@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -83,7 +83,6 @@
 				DCF8A9AFCB85E1A505C8D400 /* Pods-remoteConf.debug.xcconfig */,
 				46FD8F9437D5EC6C22D32FC9 /* Pods-remoteConf.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -368,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.remoteConf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.remoteConf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
