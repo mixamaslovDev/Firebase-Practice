@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ContentContoller.swift
 //  remoteConf
 //
 //  Created by Михаил Маслов on 27.05.2020.
@@ -9,13 +9,14 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController {
+class ContentContoller: UIViewController {
     @IBOutlet weak var exitButton: UIButton!
     
     @IBAction func exitButton(_ sender: Any) {
         exit(0)
         
     }
+    
     @IBOutlet weak var remoteImage: UIImageView!
     let remoteConfig = RemoteConfig.remoteConfig()
     
@@ -29,6 +30,16 @@ class ViewController: UIViewController {
         exitButton.clipsToBounds = true
         exitButton.backgroundColor = .blue
         
+    }
+    
+    
+    @IBAction func signOut(_ sender: Any) {
+        do {
+           try Auth.auth().signOut()
+        }
+        catch {
+            print(error)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

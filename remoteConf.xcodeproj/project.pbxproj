@@ -9,27 +9,29 @@
 /* Begin PBXBuildFile section */
 		3AA33D8862346B15ABB3C788 /* Pods_remoteConf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287C2CC25B61B3FB21C9B555 /* Pods_remoteConf.framework */; };
 		4513F2E3247EEA970075E0C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513F2E2247EEA970075E0C3 /* AppDelegate.swift */; };
-		4513F2E7247EEA970075E0C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513F2E6247EEA970075E0C3 /* ViewController.swift */; };
+		4513F2E7247EEA970075E0C3 /* ContentContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513F2E6247EEA970075E0C3 /* ContentContoller.swift */; };
 		4513F2EA247EEA970075E0C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4513F2E8247EEA970075E0C3 /* Main.storyboard */; };
 		4513F2EC247EEA990075E0C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4513F2EB247EEA990075E0C3 /* Assets.xcassets */; };
 		4513F2EF247EEA990075E0C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4513F2ED247EEA990075E0C3 /* LaunchScreen.storyboard */; };
 		4513F2F7247EEAA30075E0C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4513F2F6247EEAA30075E0C3 /* GoogleService-Info.plist */; };
-		451693C9248E81B90078759A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451693C8248E81B90078759A /* Login.swift */; };
+		451693C9248E81B90078759A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451693C8248E81B90078759A /* LoginController.swift */; };
 		451693CB248E834E0078759A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451693CA248E834E0078759A /* SceneDelegate.swift */; };
+		457B5C14248EA89800918B7B /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B5C13248EA89800918B7B /* ForgotPasswordController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		287C2CC25B61B3FB21C9B555 /* Pods_remoteConf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remoteConf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4513F2DF247EEA970075E0C3 /* remoteConf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remoteConf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4513F2E2247EEA970075E0C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4513F2E6247EEA970075E0C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4513F2E6247EEA970075E0C3 /* ContentContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentContoller.swift; sourceTree = "<group>"; };
 		4513F2E9247EEA970075E0C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4513F2EB247EEA990075E0C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4513F2EE247EEA990075E0C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4513F2F0247EEA990075E0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4513F2F6247EEAA30075E0C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		451693C8248E81B90078759A /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		451693C8248E81B90078759A /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		451693CA248E834E0078759A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		457B5C13248EA89800918B7B /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		46FD8F9437D5EC6C22D32FC9 /* Pods-remoteConf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remoteConf.release.xcconfig"; path = "Target Support Files/Pods-remoteConf/Pods-remoteConf.release.xcconfig"; sourceTree = "<group>"; };
 		DCF8A9AFCB85E1A505C8D400 /* Pods-remoteConf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remoteConf.debug.xcconfig"; path = "Target Support Files/Pods-remoteConf/Pods-remoteConf.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,8 +71,9 @@
 			children = (
 				4513F2E2247EEA970075E0C3 /* AppDelegate.swift */,
 				451693CA248E834E0078759A /* SceneDelegate.swift */,
-				4513F2E6247EEA970075E0C3 /* ViewController.swift */,
-				451693C8248E81B90078759A /* Login.swift */,
+				4513F2E6247EEA970075E0C3 /* ContentContoller.swift */,
+				451693C8248E81B90078759A /* LoginController.swift */,
+				457B5C13248EA89800918B7B /* ForgotPasswordController.swift */,
 				4513F2E8247EEA970075E0C3 /* Main.storyboard */,
 				4513F2EB247EEA990075E0C3 /* Assets.xcassets */,
 				4513F2ED247EEA990075E0C3 /* LaunchScreen.storyboard */,
@@ -213,9 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4513F2E7247EEA970075E0C3 /* ViewController.swift in Sources */,
+				457B5C14248EA89800918B7B /* ForgotPasswordController.swift in Sources */,
+				4513F2E7247EEA970075E0C3 /* ContentContoller.swift in Sources */,
 				4513F2E3247EEA970075E0C3 /* AppDelegate.swift in Sources */,
-				451693C9248E81B90078759A /* Login.swift in Sources */,
+				451693C9248E81B90078759A /* LoginController.swift in Sources */,
 				451693CB248E834E0078759A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
