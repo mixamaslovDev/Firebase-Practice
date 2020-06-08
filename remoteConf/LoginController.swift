@@ -59,13 +59,7 @@ class LoginController: UIViewController {
         let neVC = storyboard.instantiateViewController(withIdentifier: "ContentContoller") as! ContentContoller
         self.present(neVC, animated: true, completion: nil)
     }
-    
   
-    @IBAction func forgotPassword(_ sender: UIButton) {
-        
-    }
-    
-    
     @IBAction func QuestionButton(_ sender: Any) {
         singUp = !singUp
     }
@@ -103,8 +97,6 @@ extension LoginController: UITextFieldDelegate {
                 showAler()
             }
         }
-        
-        
         return true
     }
 }

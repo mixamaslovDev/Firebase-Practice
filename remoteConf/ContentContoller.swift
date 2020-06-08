@@ -10,13 +10,7 @@ import UIKit
 import Firebase
 
 class ContentContoller: UIViewController {
-    @IBOutlet weak var exitButton: UIButton!
-    
-    @IBAction func exitButton(_ sender: Any) {
-        exit(0)
-        
-    }
-    
+   
     @IBOutlet weak var remoteImage: UIImageView!
     let remoteConfig = RemoteConfig.remoteConfig()
     
@@ -26,12 +20,7 @@ class ContentContoller: UIViewController {
         settings.minimumFetchInterval = 0
         remoteConfig.configSettings = settings
         remoteImage.contentMode = .center
-        exitButton.layer.cornerRadius = 12
-        exitButton.clipsToBounds = true
-        exitButton.backgroundColor = .blue
-        
     }
-    
     
     @IBAction func signOut(_ sender: Any) {
         do {
