@@ -8,4 +8,7 @@ target 'remoteConf' do
   # Pods for remoteConf
 pod 'Firebase/Analytics'
 pod 'Firebase/RemoteConfig'
+pod 'Firebase/Auth'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
 end
