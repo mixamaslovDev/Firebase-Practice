@@ -63,12 +63,11 @@ class LoginController: UIViewController {
     @IBAction func QuestionButton(_ sender: Any) {
         singUp = !singUp
     }
-}
-
-
-
-extension LoginController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    @IBAction func loginButton(_ sender: UIButton) {
+        authorization()
+    }
+    
+    func authorization() {
         let name = usernameText.text!
         let email = emailText.text!
         let password = passwordText.text!
@@ -97,6 +96,17 @@ extension LoginController: UITextFieldDelegate {
                 showAler()
             }
         }
-        return true
+        
     }
+    
+    
+}
+
+
+
+extension LoginController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        authorization()
+        return true
+        }
 }

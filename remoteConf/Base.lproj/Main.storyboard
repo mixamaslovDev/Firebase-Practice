@@ -71,36 +71,28 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="4ur-vk-hDb">
-                                            <rect key="frame" x="107" y="247" width="200" height="172"/>
+                                            <rect key="frame" x="72" y="247" width="270" height="172"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vf3-h2-5uq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="270" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="namePhonePad" returnKeyType="continue" textContentType="username"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mCx-qb-R5Q">
-                                                    <rect key="frame" x="0.0" y="69" width="200" height="34"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="0.0" y="69" width="270" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="continue" textContentType="email"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgM-r4-szV">
-                                                    <rect key="frame" x="0.0" y="138" width="200" height="34"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <rect key="frame" x="0.0" y="138" width="270" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="9sE-sO-GQT"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="9sE-sO-GQT"/>
                                             </constraints>
                                         </stackView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDV-3z-BDx">
-                                            <rect key="frame" x="34" y="538" width="346" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <state key="normal" title="Нажмите, если уже зарегистрированы"/>
-                                            <connections>
-                                                <action selector="QuestionButton:" destination="d3p-C7-xZW" eventType="touchUpInside" id="V0L-lS-9Qb"/>
-                                            </connections>
-                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMJ-zv-ZVf">
                                             <rect key="frame" x="149" y="457" width="116" height="30"/>
                                             <state key="normal" title="Забыли пароль?">
@@ -110,12 +102,36 @@
                                                 <segue destination="vQY-tq-DsB" kind="show" id="OKr-YN-bJH"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ca-EO-12g">
+                                            <rect key="frame" x="165.5" y="506" width="83" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <state key="normal" title="Войти">
+                                                <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="loginButton:" destination="d3p-C7-xZW" eventType="touchUpInside" id="ZXM-cj-OBO"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDV-3z-BDx">
+                                            <rect key="frame" x="34" y="804" width="346" height="32"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <state key="normal" title="Нажмите, если уже зарегистрированы">
+                                                <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="QuestionButton:" destination="d3p-C7-xZW" eventType="touchUpInside" id="V0L-lS-9Qb"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="HDV-3z-BDx" firstAttribute="leading" secondItem="3Fd-tW-eIq" secondAttribute="leading" constant="34" id="4hc-HI-5yM"/>
+                                        <constraint firstItem="5ca-EO-12g" firstAttribute="top" secondItem="GMJ-zv-ZVf" secondAttribute="bottom" constant="19" id="4m2-Of-FJy"/>
                                         <constraint firstItem="GMJ-zv-ZVf" firstAttribute="top" secondItem="4ur-vk-hDb" secondAttribute="bottom" constant="38" id="6f1-bX-zK0"/>
+                                        <constraint firstItem="5ca-EO-12g" firstAttribute="centerX" secondItem="3Fd-tW-eIq" secondAttribute="centerX" id="7Wl-mh-HpZ"/>
                                         <constraint firstItem="HDV-3z-BDx" firstAttribute="centerX" secondItem="3Fd-tW-eIq" secondAttribute="centerX" id="B1d-T8-uT9"/>
-                                        <constraint firstItem="HDV-3z-BDx" firstAttribute="top" secondItem="GMJ-zv-ZVf" secondAttribute="bottom" constant="51" id="FO4-q8-Xnr"/>
+                                        <constraint firstAttribute="bottom" secondItem="HDV-3z-BDx" secondAttribute="bottom" constant="60" id="EhS-Bn-GNM"/>
                                         <constraint firstItem="V36-Uh-nZZ" firstAttribute="top" secondItem="3Fd-tW-eIq" secondAttribute="top" constant="101" id="Qkv-Xf-XIM"/>
                                         <constraint firstItem="4ur-vk-hDb" firstAttribute="top" secondItem="V36-Uh-nZZ" secondAttribute="bottom" constant="82.5" id="R5H-na-NQQ"/>
                                         <constraint firstItem="4ur-vk-hDb" firstAttribute="centerX" secondItem="3Fd-tW-eIq" secondAttribute="centerX" id="XCP-2D-Lll"/>
@@ -175,10 +191,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-wV-yz9">
-                                            <rect key="frame" x="107" y="229" width="200" height="34"/>
+                                            <rect key="frame" x="72" y="229" width="270" height="34"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Dc-xJ-Qdq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="270" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="270" id="yZQ-OD-kLx"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="continue" textContentType="email"/>
                                                 </textField>
@@ -190,16 +209,16 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8G-0s-XO3">
                                             <rect key="frame" x="75.5" y="333" width="263" height="45"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                            <state key="normal" title="Восстановить пароль">
-                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            </state>
+                                            <state key="normal" title="Восстановить пароль"/>
                                             <connections>
                                                 <action selector="forgotPasswordAction:" destination="vQY-tq-DsB" eventType="touchUpInside" id="0IT-yh-Rjj"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFu-CO-E2p">
-                                            <rect key="frame" x="338" y="63" width="45" height="30"/>
-                                            <state key="normal" title="Назад"/>
+                                            <rect key="frame" x="300" y="61" width="99" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <state key="normal" title=" Отмена" image="xmark.circle.fill" catalog="system"/>
+                                            <state key="highlighted" image="xmark.circle.fill" catalog="system"/>
                                             <connections>
                                                 <action selector="backButton:" destination="vQY-tq-DsB" eventType="touchUpInside" id="d32-nS-xBP"/>
                                             </connections>
@@ -207,13 +226,13 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="0bk-wV-yz9" firstAttribute="centerX" secondItem="HaT-Jy-9uK" secondAttribute="centerX" id="8Qd-bk-YXt"/>
+                                        <constraint firstItem="zFu-CO-E2p" firstAttribute="top" secondItem="HaT-Jy-9uK" secondAttribute="top" constant="61" id="CXa-4I-Kyy"/>
                                         <constraint firstItem="0bk-wV-yz9" firstAttribute="top" secondItem="jqA-SD-i2l" secondAttribute="bottom" constant="82.5" id="IaC-wc-kNP"/>
+                                        <constraint firstAttribute="trailing" secondItem="zFu-CO-E2p" secondAttribute="trailing" constant="15" id="P0X-5v-q5u"/>
                                         <constraint firstItem="Z8G-0s-XO3" firstAttribute="top" secondItem="0Dc-xJ-Qdq" secondAttribute="bottom" constant="70" id="SW5-Iu-oUv"/>
-                                        <constraint firstItem="zFu-CO-E2p" firstAttribute="leading" secondItem="HaT-Jy-9uK" secondAttribute="leading" constant="338" id="SZO-D8-3bm"/>
                                         <constraint firstItem="Z8G-0s-XO3" firstAttribute="centerX" secondItem="0bk-wV-yz9" secondAttribute="centerX" id="WUl-Dd-9tW"/>
-                                        <constraint firstItem="zFu-CO-E2p" firstAttribute="top" secondItem="HaT-Jy-9uK" secondAttribute="top" constant="63" id="blR-if-WLU"/>
                                         <constraint firstItem="jqA-SD-i2l" firstAttribute="top" secondItem="HaT-Jy-9uK" secondAttribute="top" constant="101" id="kGx-Px-coy"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zFu-CO-E2p" secondAttribute="trailing" constant="20" symbolic="YES" id="slL-KK-lXe"/>
+                                        <constraint firstItem="zFu-CO-E2p" firstAttribute="leading" secondItem="HaT-Jy-9uK" secondAttribute="leading" constant="300" id="nno-fp-2JY"/>
                                         <constraint firstItem="jqA-SD-i2l" firstAttribute="centerX" secondItem="HaT-Jy-9uK" secondAttribute="centerX" id="zKj-WI-SjN"/>
                                     </constraints>
                                 </view>
@@ -247,5 +266,6 @@
     </scenes>
     <resources>
         <image name="backgroundAuth" width="750" height="1334"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
