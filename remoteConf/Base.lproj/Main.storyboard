@@ -189,6 +189,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backgroundAuth" width="128" height="128"/>
+        <image name="backgroundAuth" width="750" height="1334"/>
     </resources>
 </document>

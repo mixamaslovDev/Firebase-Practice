@@ -14,16 +14,17 @@ class LoginController: UIViewController {
     var singUp: Bool = true {
         willSet {
             if newValue {
+                loginButton.setTitle("Зарегистрироваться", for: .normal)
+                registrationLabel.text = "Вход"
+                emailText.isHidden = false
+                SignUpQuest.isHidden = true
+                usernameText.isHidden = true
+                
+            } else {
                 loginButton.setTitle("Войти", for: .normal)
                 registrationLabel.text = "Регистрация"
                 emailText.isHidden = false
                 SignUpQuest.isHidden = false
-                
-            } else {
-                loginButton.setTitle("Зарегистрироваться", for: .normal)
-                registrationLabel.text = "Вход"
-                emailText.isHidden = true
-                SignUpQuest.isHidden = true
             }
         }
     }
@@ -71,7 +72,7 @@ extension LoginController: UITextFieldDelegate {
         let password = passwordText.text!
         if (singUp) {
             if (!name.isEmpty && !email.isEmpty && !password.isEmpty) {
-                Auth.auth().createUser(withEmail: name, password: password) { (result, error) in
+                Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                     if error == nil {
                         if result == result {
                             print(result?.user.uid as Any)
@@ -82,7 +83,8 @@ extension LoginController: UITextFieldDelegate {
                 showAler()
             }
             if (!name.isEmpty && !password.isEmpty) {
-                
+                Auth.auth().isSignIn(withEmailLink: email)
+                print(email)
             } else {
                 showAler()
             }
